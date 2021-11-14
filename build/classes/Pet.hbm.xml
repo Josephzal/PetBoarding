@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 21, 2021 5:30:05 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="PetE" table="pet">
+    
+    <meta attribute = "class-description">
+         This class contains the pet detail. 
+      </meta>
+    
+         <id name = "petID" type = "int" column = "petID">
+         <generator class="native"/>
+      </id>
+      	<property name = "petOwnerID" column = "petOwnerID" type = "string"/>
+          <property name = "petName" column = "petName" type = "string"/>
+          <property name = "speciesID" column = "speciesID" type = "string"/>
+          <property name = "breedID" column = "breedID" type = "string"/>
+          <property name = "petAge" column = "petAge" type = "string"/>
+          <property name = "sexID" column = "sexID" type = "string"/>
+    </class>
+</hibernate-mapping>
+
+
+

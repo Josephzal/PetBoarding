@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 21, 2021 5:30:05 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="BoardingE" table="boarding">
+    
+    <meta attribute = "class-description">
+         This class contains the pet detail. 
+      </meta>
+    
+         <id name = "boardingID" type = "int" column = "boardingID">
+         <generator class="native"/>
+      </id>
+      	<property name = "petID" column = "petID" type = "int"/>
+          <property name = "ownerID" column = "ownerID" type = "int"/>
+          <property name = "dropOffDate" column = "dropOffDate" type = "string"/>
+          <property name = "pickUpDate" column = "pickUpDate" type = "string"/>
+          <property name = "boardingStatusID" column = "boardingStatusID" type = "string"/>
+    </class>
+</hibernate-mapping>

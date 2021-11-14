@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 21, 2021 5:30:05 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="CustomerE" table="customer">
+    
+    <meta attribute = "class-description">
+         This class contains the pet detail. 
+      </meta>
+    
+         <id name = "customerID" type = "int" column = "customerID">
+         <generator class="native"/>
+      </id>
+      	<property name = "customerFirstName" column = "customerFirstName" type = "string"/>
+          <property name = "customerLastName" column = "customerLastName" type = "string"/>
+          <property name = "customerPhone" column = "customerPhone" type = "string"/>
+          <property name = "customerEmail" column = "customerEmail" type = "string"/>
+          <property name = "customerAddress" column = "customerAddress" type = "string"/>
+    </class>
+</hibernate-mapping>
