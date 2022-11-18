@@ -1,0 +1,1 @@
+SSC School Project. Pet management system that utilizes a SQL database to store customers and their pets with create, read, update, and delete functionality. Acts as an employee facing tool to provide management for their service. 
